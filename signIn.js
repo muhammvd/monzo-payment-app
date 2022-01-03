@@ -23,7 +23,7 @@ signInSubmit.addEventListener('click', (e)=>{
       } else{
         email.style.border = '2.5px solid green';
         password.style.border = '2.5px solid green';
-        setInterval(() => {
+        setTimeout(() => {
           window.location.href = 'home.html'
         }, 700); 
       }
