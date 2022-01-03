@@ -40,40 +40,6 @@ function disableButton(){
 //Declaring Variables
 const pay = document.querySelector('.pay-paystack');
 
-/*function payHere(){
-    let paystack = PaystackPop.setup({
-        key: 'pk_test_80144727599bef7b6e561645e1aee63e9ce69b0b',
-        email: 'muhammadsaniharuna44@gmail.com',
-        amount: 100000,
-
-    callback: function(response){
-         alert(`Transaction is successful your ID is ${response}`)
-        },
-        onClose: function(){
-         alert('heyy')
-        }
-      });
-
-    paystack.openIframe();
-}*/
-
-/*function payHere(){
-    let paystack = PaystackPop.setup({
-        key: 'pk_test_80144727599bef7b6e561645e1aee63e9ce69b0b',
-        email: 'muhammadsaniharuna44@gmail.com',
-        amount: 10000,
-
-        callback: function(response){
-            alert(`Transaction is successful your ID is ${response}`)
-          },
-          onClose: function(){
-              alert('heyy')
-          }
-      });
-
-    paystack.openIframe();
-}*/
-
 function payHere(){
     const paystack = new PaystackPop();
     paystack.newTransaction({
@@ -83,11 +49,11 @@ function payHere(){
 
     onSuccess: (transaction) => { 
         // Payment complete! Reference: transaction.reference 
-        alert('okay')
+        alert(`Thank you, you reference is ${reference.id}`)
       },
       onCancel: () => {
         // user closed popup
-        alert('not okay')
+        alert('You have closed the payment window')
       }
     
 });
