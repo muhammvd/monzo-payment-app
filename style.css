@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 *{
-   margin: 0;
-   padding: 0;    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+     user-select: none;
 }
+
 
 a{
     color: #ffffff;
@@ -954,7 +965,7 @@ footer p{
       width: 50%;
   }
   .sign-up-container button{
-      width: 52%;
+      width: 50%;
       border: 3px solid #2991cc;
       border-radius: 0%;
   }
